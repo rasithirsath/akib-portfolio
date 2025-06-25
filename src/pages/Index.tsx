@@ -1,12 +1,58 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import OverlayMenu from '../components/OverlayMenu';
+import HeroSection from '../components/HeroSection';
+import ProjectsSection from '../components/ProjectsSection';
+import CaseStudiesSection from '../components/CaseStudiesSection';
+import AboutPage from '../components/AboutPage';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const handleNavigation = (page: string) => {
+    setCurrentPage(page);
+  };
+
+  const renderCurrentPage = () => {
+    switch (currentPage) {
+      case 'about':
+        return <AboutPage />;
+      case 'projects':
+        return (
+          <div className="pt-20">
+            <ProjectsSection />
+            <CaseStudiesSection />
+          </div>
+        );
+      case 'contact':
+        return (
+          <div className="pt-20">
+            <ContactSection />
+          </div>
+        );
+      default:
+        return (
+          <>
+            <HeroSection />
+            <ProjectsSection />
+            <CaseStudiesSection />
+            <ContactSection />
+          </>
+        );
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <OverlayMenu currentPage={currentPage} onNavigate={handleNavigation} />
+      
+      <main>
+        {renderCurrentPage()}
+      </main>
+
+      <Footer />
     </div>
   );
 };
