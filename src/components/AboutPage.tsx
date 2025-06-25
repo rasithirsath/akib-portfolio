@@ -1,8 +1,7 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const AboutPage: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   const timelineItems = [
     {
