@@ -36,7 +36,10 @@ const HeroSection: React.FC = () => {
 
             <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
               <button className="px-8 py-4 bg-gradient-to-r from-navy-600 to-navy-700 text-white rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 font-medium text-lg">
-                Start Your Journey
+                Download CV
+              </button>
+              <button className="px-8 py-4 bg-gradient-to-r from-navy-600 to-navy-700 text-white rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 font-medium text-lg">
+               LinkedIn 
               </button>
             </div>
           </div>
@@ -55,7 +58,7 @@ const HeroSection: React.FC = () => {
               
               {/* Floating Elements */}
               <div className="absolute -top-6 -left-6 w-24 h-24 glass-effect rounded-2xl flex items-center justify-center animate-float">
-                <span className="text-2xl font-bold text-gradient">15+</span>
+                <span className="text-2xl font-bold text-gradient">5+</span>
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-16 glass-effect rounded-xl flex items-center justify-center animate-float" style={{ animationDelay: '1.5s' }}>
                 <span className="text-sm font-medium text-navy-700">Years Experience</span>
