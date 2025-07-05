@@ -1,18 +1,19 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -22,7 +23,7 @@ const ContactSection: React.FC = () => {
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
     }, 3000);
   };
 
@@ -31,7 +32,10 @@ const ContactSection: React.FC = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-gold-400/20 to-gold-600/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-gold-400/10 to-gold-600/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+        <div
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-gold-400/10 to-gold-600/5 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "1s" }}
+        />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -41,7 +45,8 @@ const ContactSection: React.FC = () => {
               Start Your Transformation
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Ready to unlock your business potential? Let's discuss how we can drive your success forward.
+              Ready to unlock your business potential? Let's discuss how we can
+              drive your success forward.
             </p>
           </div>
 
@@ -58,8 +63,8 @@ const ContactSection: React.FC = () => {
                       <span className="text-gold-400 text-lg">📍</span>
                     </div>
                     <div>
-                      <p className="text-white font-medium">Global Headquarters</p>
-                      <p className="text-slate-300">New York, London, Singapore</p>
+                      <p className="text-white font-medium">Live In</p>
+                      <p className="text-slate-300">Vandalur, Chennai</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -68,7 +73,9 @@ const ContactSection: React.FC = () => {
                     </div>
                     <div>
                       <p className="text-white font-medium">Email</p>
-                      <p className="text-slate-300">contact@excellence-consulting.com</p>
+                      <p className="text-slate-300">
+                        aakibsconsulting@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -90,19 +97,27 @@ const ContactSection: React.FC = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-gold-400 rounded-full" />
-                    <span className="text-slate-300">Proven track record across industries</span>
+                    <span className="text-slate-300">
+                      Proven track record across industries
+                    </span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-gold-400 rounded-full" />
-                    <span className="text-slate-300">Customized solutions for your business</span>
+                    <span className="text-slate-300">
+                      Customized solutions for your business
+                    </span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-gold-400 rounded-full" />
-                    <span className="text-slate-300">Measurable results and ROI</span>
+                    <span className="text-slate-300">
+                      Measurable results and ROI
+                    </span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-gold-400 rounded-full" />
-                    <span className="text-slate-300">Ongoing support and partnership</span>
+                    <span className="text-slate-300">
+                      Ongoing support and partnership
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -125,7 +140,10 @@ const ContactSection: React.FC = () => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-white font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-white font-medium mb-2"
+                    >
                       Full Name
                     </label>
                     <input
@@ -141,7 +159,10 @@ const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-white font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-white font-medium mb-2"
+                    >
                       Email Address
                     </label>
                     <input
@@ -157,7 +178,10 @@ const ContactSection: React.FC = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-white font-medium mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-white font-medium mb-2"
+                    >
                       Message
                     </label>
                     <textarea

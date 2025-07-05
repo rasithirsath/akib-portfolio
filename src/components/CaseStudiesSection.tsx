@@ -61,9 +61,9 @@ const CaseStudiesSection: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-800 mb-6">
             Case Studies
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          {/* <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Real transformation stories showcasing measurable impact and sustainable results
-          </p>
+          </p> */}
         </div>
 
         <div className="space-y-12">

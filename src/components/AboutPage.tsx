@@ -5,35 +5,31 @@ const AboutPage: React.FC = () => {
 
   const timelineItems = [
     {
-      year: "2009",
-      title: "Foundation",
-      description: "Started consulting practice with focus on small business transformation"
+      year: "Age 18-19",
+      title: "Began Professional Journey | Accounting & Sales",
+      description: "Stepped into the business world while still a student, handling part-time accounting and sales roles in Tamil Nadu. This marked the start of my commitment to hands-on learning and real-world application."
     },
     {
-      year: "2012",
-      title: "First Major Client",
-      description: "Secured Fortune 500 contract, establishing credibility in enterprise consulting"
+      year: "Age 19-20",
+      title: "Remote Junior Accountant | Al-Akkas Trading Est, Dammam (KSA)",
+      description: "Managed financial responsibilities for an international company, honing skills in remote collaboration, financial discipline, and balancing professional duties with college studies."
     },
     {
-      year: "2015",
-      title: "International Expansion",
-      description: "Opened offices in London and Singapore, serving global markets"
+      year: "Age 20–21",
+      title: "Gained Cross-Functional Experience | Finance, Operations & Sales",
+      description: "Continued to build a robust business foundation by working in diverse roles while successfully completing dual degrees: a BCom (Bachelor of Commerce) and a BBA (Bachelor of Business Administration)."
     },
     {
-      year: "2018",
-      title: "Digital Innovation",
-      description: "Launched AI-powered consulting tools and methodologies"
+      year: "Age 21-22",
+      title: "Founder | CandlesNGiggles",
+      description: "Launched a playful, story-driven consumer brand from the ground up. Managed everything from product creation and branding to marketing and sales, turning an idea into a tangible business that connects with customers"
     },
     {
-      year: "2021",
-      title: "Industry Recognition",
-      description: "Named Top Consulting Firm by Business Weekly for three consecutive years"
+      year: "Age 23-Present",
+      title: "Pursuing MSc in Business Analytics | University of Limerick",
+      description: "Deepening my expertise in data modeling, predictive analytics, and strategic insights. Focused on achieving the Gold Medal and channeling this knowledge to build and scale future-focused businesses."
     },
-    {
-      year: "2024",
-      title: "Sustainable Future",
-      description: "Leading ESG and sustainability transformation initiatives globally"
-    }
+    
   ];
 
   useEffect(() => {
@@ -65,7 +61,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center scroll-reveal">
             <h1 className="text-5xl md:text-6xl font-playfair font-bold text-navy-800 mb-8">
-              About Our Mission
+              About My Mission
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed mb-8">
               We believe every business has untapped potential waiting to be unlocked. Our mission is to guide 
@@ -75,21 +71,21 @@ const AboutPage: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">150+</span>
+                  <span className="text-white font-bold text-xl">50+</span>
                 </div>
                 <h3 className="font-playfair font-semibold text-navy-800 mb-2">Projects Completed</h3>
                 <p className="text-slate-600">Successful transformations across industries</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-navy-400 to-navy-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">25+</span>
+                  <span className="text-white font-bold text-xl">10+</span>
                 </div>
                 <h3 className="font-playfair font-semibold text-navy-800 mb-2">Countries Served</h3>
                 <p className="text-slate-600">Global reach with local expertise</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-gold-400 to-navy-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">15</span>
+                  <span className="text-white font-bold text-xl">5</span>
                 </div>
                 <h3 className="font-playfair font-semibold text-navy-800 mb-2">Years Experience</h3>
                 <p className="text-slate-600">Proven track record of excellence</p>
@@ -108,39 +104,37 @@ const AboutPage: React.FC = () => {
                 <img
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&h=600&fit=crop&auto=format"
                   alt="Founder and CEO"
-                  className="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-2xl"
+                  className="w-full h-96 md:h-[500px] object-cover rounded-0xl shadow-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent rounded-0xl" />
               </div>
             </div>
 
             <div className="scroll-reveal">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-800 mb-8">
-                Meet Our Founder
+                Hey There,
               </h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-playfair font-semibold text-navy-700 mb-3">Our Vision</h3>
+                  {/* <h3 className="text-2xl font-playfair font-semibold text-navy-700 mb-3">Our Vision</h3> */}
                   <p className="text-lg text-slate-600 leading-relaxed">
-                    "I envision a world where every business, regardless of size, has access to world-class 
-                    strategic guidance. Our role is to democratize excellence and make transformative 
-                    consulting accessible to organizations ready to embrace change."
+                    "I’ve always learned best by diving in and doing the work. My journey has been a dynamic mix of entrepreneurship, finance, and now, deep analytics, and it’s given me a unique perspective on what it really takes to build something that lasts.
+"
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-playfair font-semibold text-navy-700 mb-3">Our Mission</h3>
+                  {/* <h3 className="text-2xl font-playfair font-semibold text-navy-700 mb-3">Our Mission</h3> */}
                   <p className="text-lg text-slate-600 leading-relaxed">
-                    "We exist to unlock the extraordinary potential within ordinary businesses. Through 
-                    strategic insight, innovative methodologies, and unwavering commitment to our clients' 
-                    success, we transform challenges into opportunities for sustainable growth."
+                    "Before I started consulting, I founded CandlesNGiggles, building the brand and the business completely from the ground up. That experience as a founder is backed by my time managing international finance with firms like Al-Akkas Trading Est and leading operational projects. It was there I learned how to build efficient systems and use data to make smart, confident decisions. With that background I love working to help other founders and businesses grow.
+"
                   </p>
                 </div>
 
                 <div className="pt-6">
-                  <p className="text-xl font-playfair text-navy-800 mb-2">Alexander Richardson</p>
-                  <p className="text-gold-600 font-medium">Founder & Chief Executive Officer</p>
+                  <p className="text-xl font-playfair text-navy-800 mb-2">- Akib Suhail</p>
+                  {/* <p className="text-gold-600 font-medium">Founder & Chief Executive Officer</p> */}
                 </div>
               </div>
             </div>
@@ -149,7 +143,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* About the Founder */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-navy-50">
+      {/* <section className="py-20 bg-gradient-to-br from-slate-50 to-navy-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 scroll-reveal">
@@ -204,18 +198,18 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Timeline */}
       <section className="py-20 bg-gradient-to-b from-navy-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-800 mb-6">
-              Our Journey
+              My Journey
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               From humble beginnings to global impact - the milestones that shaped our consulting excellence
-            </p>
+            </p> */}
           </div>
 
           <div className="max-w-4xl mx-auto">
