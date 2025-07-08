@@ -7,7 +7,7 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       id: 1,
-      image: Deloitte,
+      image: Mastercard,
       description: [
         "Completed a job simulation involving data-driven marketing analysis for Mastercard.",
         "Analyzed a comprehensive data set, employing techniques in statistical analysis and comparative study to identify key trends in sales and customer engagement.",
@@ -19,7 +19,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       id: 2,
-      image: Mastercard,
+      image: Deloitte,
       description: [
         "Completed a Deloitte job simulation involving data analysis and forensic technology ",
         "Created a data dashboard using Tableau ",
