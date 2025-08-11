@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-playfair font-bold text-gradient mb-4">
-              Excellence Consulting
+              Akib Suhail
             </h3>
             <p className="text-slate-300 leading-relaxed max-w-md">
               Transforming businesses through strategic insight, innovative
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="border-t border-navy-700 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Excellence Consulting. All rights reserved. |
+            © 2025 Akib Suhail. All rights reserved. |
             <span className="ml-2">Crafted with precision and passion</span>
           </p>
         </div>

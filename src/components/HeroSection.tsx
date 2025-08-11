@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import akibwhite from "../../public/images/akib-white.jpg";
 
 const HeroSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,7 +75,7 @@ const HeroSection: React.FC = () => {
             <div className="relative">
               <div className="card-3d hover-lift">
                 <img
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=800&fit=crop&auto=format"
+                  src={akibwhite}
                   alt="Business consultation meeting"
                   className="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-2xl"
                 />
